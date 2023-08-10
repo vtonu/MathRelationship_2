@@ -23,11 +23,11 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size: 14px;
-  line-height: 2em;
-  letter-spacing: -0.02em;
+  line-height: 1em;
+  letter-spacing: -0.01em;
   color: rgba(0, 0, 0, 0.8);
   -webkit-font-smoothing: antialiased;
-  border: 4px solid rgba(0, 255, 0, 0.088);
+  border: 3px solid rgba(0, 255, 0, 0.088);
   text-align: center;
   padding: 0.3em;
 }
@@ -69,12 +69,12 @@ body {
 @keyframes progress {
   0% {
     width: 0%;
-    background: red;
+    background: #f3233f;
   }
 
   100% {
     width: 100%;
-    background: green;
+    background: #00ff00;
     box-shadow: 0 0 5px #23f323;
   }
 }
