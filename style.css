@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100%;
+  background: black;
+}
+.gradient-bar {
+  position: relative;
+  margin-top: 30px;
+  width: 350px;
+  height: 10px;
+  background: white;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+.gradient-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fb0014, #00ff00);
+  animation: animate 5s linear infinite;
+  background-size: 100%;
+}
+.gradient-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fb0014, #00ff00);
+  animation: animate 5s linear infinite;
+  background-size: 150%;
+  filter: blur(1px);
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 500% 0;
+  }
+}
+.legend {
+  position: relative;
+  width: 350px;
+  height: 80px;
+  background: white;
+}
+.Confusion {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #fb0014;
+}
+.Appreciation {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: #00ff00;
+}
