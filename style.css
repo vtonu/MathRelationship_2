@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,12 @@ body {
   align-items: center;
   padding-top: 100%;
   background: black;
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+  font-size: 20px;
 }
 .gradient-bar {
   position: relative;
@@ -44,21 +52,16 @@ body {
     background-position: 500% 0;
   }
 }
-.legend {
-  position: relative;
-  width: 350px;
-  height: 80px;
-  background: white;
-}
 .Confusion {
   position: relative;
-  width: 50px;
+  width: 350px;
   height: 50px;
   background: #fb0014;
 }
 .Appreciation {
   position: relative;
-  width: 50px;
+  width: 350px;
   height: 50px;
   background: #00ff00;
+  margin-top: 5px;
 }
