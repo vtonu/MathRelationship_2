@@ -24,12 +24,12 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 1em;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.001em;
   color: rgba(0, 0, 0, 0.8);
   -webkit-font-smoothing: antialiased;
   border: 3px solid rgba(0, 255, 0, 0.088);
   text-align: center;
-  padding: 0.3em;
+  padding: 0.2em;
 }
 .Confusion {
   position: relative;
@@ -41,9 +41,6 @@ body {
   background: #00ff00;
   margin-top: 5px;
   padding: 0.5em;
-}
-.current-year {
-  color: white;
 }
 .container {
   margin: 5px auto;
@@ -59,17 +56,22 @@ body {
 .progress-bar2 {
   height: 20px;
   border-radius: 2px;
-  transition: 0.4s linear;
+  transition: 0.8s linear;
   transition-property: width, background-color;
 }
 .progress-moved .progress-bar2 {
   background-color: #f3233f;
-  animation: progress 5s infinite;
+  animation: progress 10s infinite;
 }
 @keyframes progress {
   0% {
     width: 0%;
     background: #f3233f;
+  }
+
+  80% {
+    background: #f3233f;
+    box-shadow: 0 0 5px #f32323;
   }
 
   100% {
