@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100%;
+  padding-top: 50%;
   background: black;
   font-family: 'Muli', sans-serif;
   color: rgba(0, 0, 0, 0.8);
@@ -17,35 +17,6 @@ body {
   line-height: 1.58;
   letter-spacing: -0.003em;
   font-size: 20px;
-}
-.gradient-bar {
-  position: relative;
-  margin-top: 10px;
-  width: 250px;
-  height: 20px;
-  background: white;
-  overflow: hidden;
-}
-
-.progress-bar {
-  width: 0;
-  height: 100%;
-  background: linear-gradient(90deg, #fb0014, #00ff00);
-  animation: animate 25s linear;
-}
-
-@keyframes animate {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-/* Add this rule to control visibility of the progress bar and completion text */
-.progress-bar.complete {
-  animation: none; /* Pause animation */
-  width: 100%; /* Set the width to 100% */
 }
 .legend {
   font-family: 'Quicksand', sans-serif;
@@ -63,12 +34,89 @@ body {
 .Confusion {
   position: relative;
   background: #fb0014;
+  padding: 0.5em;
 }
 .Appreciation {
   position: relative;
   background: #00ff00;
   margin-top: 5px;
+  padding: 0.5em;
 }
 .current-year {
   color: white;
+}
+.container {
+  margin: 5px auto;
+  margin-top: 20px;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.progress2 {
+  border-radius: 2px;
+  background-color: #fff;
+}
+.progress-bar2 {
+  height: 20px;
+  border-radius: 2px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+.progress-moved .progress-bar2 {
+  background-color: #f3233f;
+  animation: progress 5s infinite;
+}
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: red;
+  }
+
+  100% {
+    width: 100%;
+    background: green;
+    box-shadow: 0 0 5px #23f323;
+  }
+}
+.loader {
+  --p: 0;
+  animation: p 5s steps(100) infinite;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: -0.02em;
+}
+.loaderTwo {
+  --p: 0;
+  animation: p 5s steps(100) infinite;
+  counter-reset: p var(--p);
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: -0.02em;
+  right: 0%;
+}
+.loader:after {
+  content: attr(data-year);
+}
+
+@keyframes p {
+  0% {
+    --p: var(--f);
+  }
+
+  100% {
+    --p: var(--n);
+  }
 }

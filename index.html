@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Relationship</title>
     <link rel="stylesheet" href="/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="legend">
       <div class="Confusion">CONFUSION...</div>
       <div class="Appreciation">APPRECIATION...</div>
     </div>
-    <div class="gradient-bar">
-      <div class="progress-bar"></div>
-    </div>
     <div class="current-year">
-      <span id="year">1998</span>
+      <span id="year"></span>
       <span id="completion-text"></span>
+    </div>
+    <div class="container">
+      <div class="progress2 progress-moved">
+        <div class="progress-bar2"></div>
+        <div class="loader" style="--n: 2023; --f: 1998" data-year="1998"></div>
+        <div class="loaderTwo">2023</div>
+      </div>
     </div>
   </body>
   <script src="/app.js"></script>
