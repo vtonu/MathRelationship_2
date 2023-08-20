@@ -1,33 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 30%;
   background: black;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  gap: 5px;
 }
 .legend {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 13px;
-  line-height: 1em;
-  letter-spacing: -0.001em;
-  color: aliceblue;
-  background-color: black;
-  -webkit-font-smoothing: antialiased;
+  color: white;
   border: 2px solid whitesmoke;
-  text-align: center;
-  padding: 0.5em;
+
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: baseline;
+  gap: 10px;
+  padding: 0.5em;
 }
 .Confusion {
   position: relative;
@@ -35,12 +34,21 @@ body {
   width: 16px;
   height: 16px;
 }
+.confusion-box {
+  display: flex;
+  gap: 4px;
+}
 .Appreciation {
   position: relative;
   background: #00ff00;
   width: 16px;
   height: 16px;
 }
+.appreciation-box {
+  display: flex;
+  gap: 4px;
+}
+/* Progress bar and years container*/
 .container {
   margin: 15px auto;
   width: 400px;
@@ -66,7 +74,7 @@ body {
     background: #f3233f;
   }
 
-  80% {
+  90% {
     background: #f3233f;
     box-shadow: 0 0 5px #f32323;
   }
@@ -77,7 +85,7 @@ body {
     box-shadow: 0 0 5px #23f323;
   }
 }
-.loader {
+.yearOne {
   --p: 0;
   animation: p 5s steps(100) infinite;
   counter-reset: p var(--p);
@@ -91,7 +99,7 @@ body {
   line-height: 2em;
   letter-spacing: -0.02em;
 }
-.loaderTwo {
+.yearTwo {
   --p: 0;
   animation: p 5s steps(100) infinite;
   counter-reset: p var(--p);
@@ -105,17 +113,4 @@ body {
   line-height: 2em;
   letter-spacing: -0.02em;
   right: 0%;
-}
-.loader:after {
-  content: attr(data-year);
-}
-
-@keyframes p {
-  0% {
-    --p: var(--f);
-  }
-
-  100% {
-    --p: var(--n);
-  }
 }
