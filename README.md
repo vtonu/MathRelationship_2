@@ -1,5 +1,6 @@
 # MathRelationship_2
- A simple html, css, js project to showcase my relationship with math.
+
+A simple HTML, CSS, JS Project for my Math Class
 
  _Why did the frontend developer break up with their calculator? They said, "I can't handle relationships that don't have a smooth loading transition." - ChatGPT_
 
