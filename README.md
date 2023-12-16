@@ -1,6 +1,6 @@
 # MathRelationship_2
 
-A simple HTML, CSS, JS Project for my final in Math class. Loading bar changing color.
+A simple HTML, CSS, JS loading bar project for my Math class.
 
  _Why did the frontend developer break up with their calculator? They said, "I can't handle relationships that don't have a smooth loading transition." - ChatGPT_
 
